@@ -1,0 +1,101 @@
+<table class="table table-hover">
+    <thead>
+      <colgroup span="2"></colgroup>
+      <tr>
+        <th rowspan="2">user id</th>
+        <th rowspan="2">user name</th>
+        <th rowspan="2">email</th>
+        <th colspan="2" scope="colgroup">Address</th>
+        <th rowspan="2">Action</th>
+      </tr>
+      <tr>
+        <th scope="col">City</th>
+        <th scope="col">Street</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr class="table-active" *ngFor="let u of users" [user]="u">
+          <th >{{u.id}}</th>
+          <td>{{u.name}}</td>
+          <td><a routerLink="{{u.id}}">{{u.email}}</a></td>
+          <td>{{u.Address.City}}</td>
+          <td>{{u.Address.Street}}</td>
+          <td>
+            <input  type="button" class="btn btn-warning" value=" Update" (click)="data(u)" > |
+            <input type="button" class="btn btn-danger" value=" Delete" (click)="Delete(u.id)" >
+          </td>
+        </tr>
+    </tbody>
+</table>
+<br> 
+<br> 
+<h2 style="text-align: center;">Update User </h2>
+<div style="width: 700px; background-color: rgba(240, 248, 255, 0.096); border-radius: 20px;text-align: center;margin-left: 300px;">
+  <br> 
+  <div class="form-group" style="margin-right: 10px; margin-left: 10px;" >
+      <label>Id</label>
+      <input style="border-radius: 10px;" type="text" class="form-control" placeholder="Id" [(ngModel)]="idUpdate">
+    </div>
+    <div class="form-group" style="margin-right: 10px; margin-left: 10px;">
+      <label>User Name</label>
+      <input style="border-radius: 10px;" type="text" class="form-control" placeholder="User Name" [(ngModel)]="nameUpdate">
+    </div>
+    <div class="form-group" style="margin-right: 10px; margin-left: 10px;">
+      <label>Email</label>
+      <input style="border-radius: 10px;" type="text" class="form-control" placeholder="email" [(ngModel)]="emailUpdate">
+    </div>
+    <div class="form-group" style="margin-right: 10px; margin-left: 10px;">
+      <label>Age</label>
+      <input style="border-radius: 10px;" type="text" class="form-control" placeholder="age" [(ngModel)]="ageUpdate">
+    </div>
+    <div class="form-group" style="margin-right: 10px; margin-left: 10px;">
+      <label>city</label>
+      <input style="border-radius: 10px;" type="text" class="form-control" placeholder="city" [(ngModel)]="cityUpdate">
+    </div>
+    <div class="form-group" style="margin-right: 10px; margin-left: 10px;">
+      <label>Street</label>
+      <input style="border-radius: 10px;" type="text"  class="form-control" placeholder="Street" [(ngModel)]="streetUpdate">
+    </div>
+   <input type="button" value="Update User" class="btn btn-primary" (click)="Update()">
+   <br> 
+   <br> 
+</div>
+<br> 
+<br> 
+<h2 style="text-align: center;">Add New User </h2>
+<br>
+<br>
+<div style="width: 700px; background-color: rgba(240, 248, 255, 0.096); border-radius: 20px;text-align: center;margin-left: 300px;">
+  <br> 
+  <div class="form-group" style="margin-right: 10px; margin-left: 10px;" >
+      <label>Id</label>
+      <input style="border-radius: 10px;" type="text" class="form-control" placeholder="Id" [(ngModel)]="id">
+    </div>
+    <div class="form-group" style="margin-right: 10px; margin-left: 10px;">
+      <label>User Name</label>
+      <input style="border-radius: 10px;" type="text" class="form-control" placeholder="User Name" [(ngModel)]="name">
+    </div>
+    <div class="form-group" style="margin-right: 10px; margin-left: 10px;">
+      <label>Email</label>
+      <input style="border-radius: 10px;" type="text" class="form-control" placeholder="email" [(ngModel)]="email">
+    </div>
+    <div class="form-group" style="margin-right: 10px; margin-left: 10px;">
+      <label>Age</label>
+      <input style="border-radius: 10px;" type="text" class="form-control" placeholder="age" [(ngModel)]="age">
+    </div>
+    <div class="form-group" style="margin-right: 10px; margin-left: 10px;">
+      <label>city</label>
+      <input style="border-radius: 10px;" type="text" class="form-control" placeholder="city" [(ngModel)]="city">
+    </div>
+    <div class="form-group" style="margin-right: 10px; margin-left: 10px;">
+      <label>Street</label>
+      <input style="border-radius: 10px;" type="text"  class="form-control" placeholder="Street" [(ngModel)]="street">
+    </div>
+   <input type="button" value="Add User" class="btn btn-primary" (click)="Add()">
+   <br> 
+   <br> 
+</div>
+<br> 
+
+
+

@@ -1,0 +1,16 @@
+<div *ngIf="user == '[object Object]';else NoData" class="alert alert-info text-center">
+
+    <h6>{{user.id}}</h6>
+    <h6>{{user.name}}</h6>
+    <h6>{{user.email}}</h6>
+    <h6>{{user.age}}</h6>
+    <h6>{{user.Address.City}}</h6>
+    <h6>{{user.Address.Street}}</h6>
+  
+  </div>
+  
+  <ng-template #NoData>
+    <div>
+      Please Wait .....
+    </div>
+  </ng-template>

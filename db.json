@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "Nada",
+      "email": "Nada@gmail.com",
+      "age": 23,
+      "Address": {
+        "City": "Alex",
+        "Street": "Ay7agah"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Dahap",
+      "email": "Dahap@gmail.com",
+      "age": 18,
+      "Address": {
+        "City": "Cairo",
+        "Street": "Ay7agah"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Micky",
+      "email": "Micky@gmail.com",
+      "age": 23,
+      "Address": {
+        "City": "Minya",
+        "Street": "Ay7agah"
+      }
+    },
+    {
+      "id": "5",
+      "name": "user",
+      "age": "22",
+      "email": "admin@gmail.com",
+      "Address": {
+        "City": "Cairo Update",
+        "Street": "Koko"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Roqaia",
+      "age": "22",
+      "email": "roqaia391@gmail.com",
+      "Address": {
+        "City": "mallawi",
+        "Street": "minya"
+      }
+    },
+    {
+      "id": "7",
+      "name": "koko",
+      "age": "22",
+      "email": "koko@gmail.com",
+      "Address": {
+        "City": "koko",
+        "Street": "koko"
+      }
+    }
+  ]
+}
